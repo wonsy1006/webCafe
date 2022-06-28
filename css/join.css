@@ -176,7 +176,57 @@ input#address {
 /*------------------ twitterArea Section ------------------*/
 #twitterArea {
     width: 210px;
+    height: 400px;
     margin-left: 30px;
     position: relative;
     margin-top: 15px;
+}
+
+#twitterArea::before {
+    content: "";
+    width: 10px;
+    height: 90%;
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    background: linear-gradient(to right, #fff 0%, #f3f3f3 100%);
+    border-radius: 50%;
+}
+
+#twitterArea h2 {
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#twitterArea h2::before {
+    font-family: "webcafeIcon";
+    content: "t";
+    position: relative;
+    font-size: 1.3em;
+    top: 4px;
+    margin-right: 5px;
+    color: #1DA1F1;
+}
+
+.twitterArticle img{
+    width: 45px;
+    margin: 15px 15px 0 0;
+}
+
+.twitterArticle p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.twitterArticle mark {
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.twitterDate {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+    color: #9c9c9c;
 }
